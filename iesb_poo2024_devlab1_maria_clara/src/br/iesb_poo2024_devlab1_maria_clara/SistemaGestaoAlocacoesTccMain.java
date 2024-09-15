@@ -19,7 +19,8 @@ public class SistemaGestaoAlocacoesTccMain {
 		Professor professor = new Professor();
 		professor.setNome("Joao");
 		professor.setCargoProfessor("Professor Assistente");
-		
+
+		// instanciando a variável na memória e atribuindo valor
 		Aluno aluno = new Aluno ();
 		aluno.setNome("Maria");
 		aluno.setNrSemmestre(7);
