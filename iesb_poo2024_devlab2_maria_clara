@@ -1,1 +1,30 @@
+package IESB_POO2024_devlab4_MariaClaraFontenele;
+
+public class DevLab4Main {
+
+	public static void main(String[] args) {
+		
+	//	Veiculo veiculo = new VeiculoPasseio();
+	//	VeiculoPasseio veiculoPasseio2 = new VeiculoPasseio();
+		
+		Veiculo veiculoPasseio = new VeiculoPasseio();
+		Veiculo veiculoTransporte = new VeiculoPasseio();
+		Veiculo veiculoUtilitario = new VeiculoPasseio();
+		
+		veiculoPasseio.acelerar();
+		veiculoTransporte.acelerar();
+		veiculoUtilitario.acelerar();
+		
+		IGerenciaConfiguracoesVeiculo gerenciaVeiculoPasseio = new VeiculoPasseio();
+		System.out.println(">>Quilometragem atual do Veículo de Passeio: " 
+		                          + gerenciaVeiculoPasseio.obterQuilometragemAtual());
+		
+
+		IGerenciaConfiguracoesVeiculo gerenciaVeiculoSedam = new CarroSedan();
+		System.out.println(">>Quilometragem atual do Veículo de Passeio: " 
+		                          + gerenciaVeiculoPasseio.obterQuilometragemAtual());
+
+	}
+
+}
 
